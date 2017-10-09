@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    border: 1px solid silver
+}
+
+.about{
+    background-color: lightgreen;
+    width: 100vw;
+    height: 70vh;
+}
+.bio{
+    
+}
+
+.photo{
+    position: relative;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    float: right;
+    top: 50px; 
+    right: 40px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: yellow;
+}
+
+.skills > .progressbar{
+    display: flex;
+    padding: 20px;  
+    padding-left: 50px;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+}
+
+.interests{
+    height: 90vh;
+}
+
+.interests > div{
+    display: grid;
+    height: 90vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.interest{
+    border: 1px solid grey
+}
+
+.projects{
+    height: 90vh;
+}
+
+.activities > div{
+    display: grid;
+    height: 90vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.activity{
+    border: 1px solid grey;
+}
+
+.awards{
+    height: 90vh;
+}
