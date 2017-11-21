@@ -1,168 +1,94 @@
--
-    lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-
-doctype html
 html
-    head
-        title gab
-        link(rel='stylesheet',href='style.css')
-        link(rel='stylesheet',href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif|Passion+One')
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js')
-        script(src='script.js')
-    body
-        .wrapper
-            section#home.topNav
-                .menu
-                    a(onclick="scrollToSection('home')") Home
-                    a(onclick="scrollToSection('kendo')") Kendo
-                    a(onclick="scrollToSection('volunteering')") Volunteering
-                    a(onclick="scrollToSection('teaching')") Teaching
-                    a(onclick="scrollToSection('religion')") Religion
-                    a(onclick="scrollToSection('programming')") Programming
-                    a(onclick="scrollToSection('math')") Math
-                    a(onclick="scrollToSection('soccer')") Soccer
-                    a(onclick="scrollToSection('travelling')") Travelling
-                    a(onclick="scrollToSection('skills')") Skills
-                    a(onclick="scrollToSection('projectsHeader')") Projects
-                    a(onclick="scrollToSection('awards')") Awards
-                .menu.fixed
-                    a(onclick="scrollToSection('home')") Home
-                    a(onclick="scrollToSection('kendo')") Kendo
-                    a(onclick="scrollToSection('volunteering')") Volunteering
-                    a(onclick="scrollToSection('teaching')") Teaching
-                    a(onclick="scrollToSection('religion')") Religion
-                    a(onclick="scrollToSection('programming')") Programming
-                    a(onclick="scrollToSection('math')") Math
-                    a(onclick="scrollToSection('soccer')") Soccer
-                    a(onclick="scrollToSection('travelling')") Travelling
-                    a(onclick="scrollToSection('skills')") Skills
-                    a(onclick="scrollToSection('projectsHeader')") Projects
-                    a(onclick="scrollToSection('awards')") Awards
-                .portrait
-                h1 DongGyu Seo
-                p I’m currently a senior at SMCHS. I look forward to studying applied mathematics and computer science at college. I’m an avid programmer and sports fan/player.
-            section#soccer.bgImage
-                h1 Soccer
-                p.fadeIn I am also one of huge sports fan. Although I like watching almost all sports such as basketball and baseball, my favorite has always been soccer. During free time, I like to go to a park near my house and play soccer with people whom I don't even know.
-                p.fadeIn I played soccer at school for two years, and will definitely play soccer at college, too.                  
-            section#kendo.bgImage
-                .dimmer
-                h1 Kendo
-                p.fadeIn I've been a Kendo Practitioner since 8th grade. For me and other Kendo practitioners, Kendo is not merely a sport, but also a challenging, inspiring training that influences our personality and ability to concentrate to the every moment of our lives.
-                p.fadeIn During the five valuable years of playing Kendo, I promoted 5 times total and earned '1st Dan'. I also participated in various competitions held by different Kendo Federations and enjoyed the opportunity of competing with people who are better Kendo Practitioners than I am and learn my strength and weakness.
-            section#volunteering.bgImage
-                h1 Volunterring
-                p.fadeIn During three summer vacations during Freshman, Sophomore, and Junior year, I went to Guatemala twice and Dominican Republic once as a volunteering trip. Because I felt like I'm still in my comfort zone whenever I volunteered within the States, I wanted to experience volunteering in a true sense at places that are new and unfamiliar to me.
-                p.fadeIn Each time I went there, I had different volunteering projects to do. We gifted family who are in need cookstoves that we built ourselves, chicken coops and chicken to help their living, and latrines to alleviate the pollution of the river.
-                p.fadeIn Through the valuable relationship I built with people I met in Guatemala and Dominican Republic, I relearned that helping others is about not only supporting them with material items, but also interacting with them with genuine empathy and care.
-            section#teaching.bgImage
-                h1 Teaching
-                p.fadeIn This is my fourth year of teaching elementary students how to speak and write in Korean at Our Lady of Peace(Catholic Church I go to). First two years, I worked as a Teaching Assistant to help teachers prepare for their classes, and after that I had my own class to teach.
-                p.fadeIn Teaching kids who often becomes disrupt and disinterested is challenging, but it is still one of the most valuable experiences in my life that taught me patience and empathy to get along with people who are quite different from me.
-            section#religion.bgImage
-                h1 Religion
-                p.fadeIn Catholic background is one of the major aspects when describing myself. Being born in a family that had been Catholic for almost a century, I was baptized when I was three months old. As seen in the picture, I've been doing altar service at church since I was eight-years old.
-            section#programming.bgImage
-                h1 Programming
-                p.fadeIn I first experienced prgramming during 10th grade, when I took Intro to Programming Class at school. After finishing taking AP Computer Science the following year, I also learned other language other than java from the other programmer outside school. Such programming skills enabled me to explore many things that I did not know about computer before and also to create this website as well. I also managed to license a usuable application as well.
-            section#travel.bgImage
-                h1 Travelling
-                p.fadeIn Our family definitely like to travel. I've been to Western European countries such as Netherlands, Belgium, Switzerland, France, Germany, Austria and Germany, Vietnam, Philippines, Guatemala and Dominican Republic.
-                p.fadeIn Each trip was a valuable experience to learn different and unfamiliar culture outside my daily boundary. This is why I look forward to studying outside the States even I go to college.
-            section#math.bgImage
-                h1 Math
-                p.fadeIn Among many different subjects I have taken at school, math is my favorite. I like not only solving challenging problems, but also math's objectivity. Without any bias, when one follows the right step, math always yields the right answer.
-                p.fadeIn Currently in my senior, I am the only student who is taking IB Further Mathematics HL. I consider it as a perfect preparation to experience how college-level math is like.
-            section#skills
-                h1 coding skills
-                p These are a list of languages I learned as programmer
-                .skills
-                    .skill(data-fill='0.5') java
-                        .bar
-                    .skill(data-fill='0.8') javascript
-                        .bar
-                    .skill(data-fill='0.1') jquery
-                        .bar
-                    .skill(data-fill='0.2') react
-                        .bar
-                    .skill(data-fill='0.7') html
-                        .bar
-                    .skill(data-fill='0.3') jade/pug
-                        .bar
-                    .skill(data-fill='0.9') css
-                        .bar
-                    .skill(data-fill='0.1') stylus
-                        .bar
-                    .skill(data-fill='1.0') bootstrap
-                        .bar
-            
-                    
-            section#projectsHeader 
-                h1 projects
-                p="These are simple projects I created with coding skills I earned."
-            section#projects
-                .project
-                    img(src="https://images.pexels.com/photos/41951/solar-system-emergence-spitzer-telescope-telescope-41951.jpeg?h=350&auto=compress&cs=tinysrgb")
-                    .text solar system
-                .project
-                    img(src="https://images.pexels.com/photos/242494/pexels-photo-242494.jpeg?h=350&auto=compress&cs=tinysrgb")
-                    .text dart game
-                .project
-                    img(src="https://images.pexels.com/photos/74228/night-theme-numbers-black-and-white-pen-74228.jpeg?h=350&auto=compress&cs=tinysrgb")
-                    .text trigonometry graphing
-                .project
-                    img(src="https://images.pexels.com/photos/42415/pexels-photo-42415.jpeg?h=350&auto=compress&cs=tinysrgb")
-                    .text animation and tweening
-                .project
-                    img(src="https://images.pexels.com/photos/39553/industry-sunrise-clouds-fog-39553.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
-                    .text minesweeper
-                .project
-                    img(src="https://i.ytimg.com/vi/lIJOuUZROo8/maxresdefault.jpg")
-                    .text game of life
-                .project
-                    img(src="https://images.pexels.com/photos/5842/people-vintage-photo-memories.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
-                    .text memory game
-                .project
-                    img(src="https://s-media-cache-ak0.pinimg.com/736x/75/20/ca/7520ca1abc9055a2e9981b16ab51b772.jpg")
-                    .text flappy pig
-                .project
-                    img(src="https://images.pexels.com/photos/1346/blue-abstract-balls-spheres.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
-                    .text bouncing balls
-            
-            section#awards
-                h1 awards
-                .awards
-                    .text Athletic Participation Award
-                    img(src="https://gab505.github.io/pictures/awards/1.jpg")
-                    .text Academic Athlete Award
-                    img(src="https://gab505.github.io/pictures/awards/2.jpg")
-                    .text AMC Recognition by Principal
-                    img(src="https://gab505.github.io/pictures/awards/20170902_152400amc.jpg")
-                    .text Altar Server Recognition
-                    img(src="https://gab505.github.io/pictures/awards/kendo/1.jpg")
-                    .text Altar Server Recognition 2
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/10.jpg")
-                    .text Kendo Promotion 1
-                    img(src="https://gab505.github.io/pictures/awards/kendo/5.jpg")
-                    .text Kendo Promotion 2
-                    img(src="https://gab505.github.io/pictures/awards/kendo/4.jpg")
-                    .text Kendo Promotion 3
-                    img(src="https://gab505.github.io/pictures/awards/kendo/2.jpg")
-                    .text Kendo Promotion 4
-                    img(src="https://gab505.github.io/pictures/awards/kendo/3.jpg")
-                    .text Guatemala Volunteering Recognition 1
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/1.jpg")
-                    .text Guatemala Volunteering Recognition 2
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/4.jpg")
-                    .text Guatemala Volunteering Recognition 3
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/5.jpg")
-                    .text Community Service Award from School 1
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/2.jpg")
-                    .text Community Service Award from School 2
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/8.jpg")
-                    .text Community Service Award from School 3
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/9.jpg")
-                    .text President's Volunteering Service Award 1
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/6.jpg")
-                    .text President's Volunteering Service Award 2
-                    img(src="https://gab505.github.io/pictures/awards/volunteering/7.jpg")
+  head
+    title hello
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='stylesheet',href='https://bootswatch.com/3/simplex/bootstrap.css')
+    link(rel='stylesheet',href='style.css') 
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Brand
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#')
+                | Link 
+                span.sr-only (current)
+            li
+              a(href='#') Link
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                | Dropdown 
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+                li.divider
+                li
+                  a(href='#') One more separated link
+          form.navbar-form.navbar-left(role='search')
+            .form-group
+              input.form-control(placeholder='Search', type='text')
+            button.btn.btn-default(type='submit') Submit
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Link
+    section.menuSection.coding
+      img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
+      .text
+        h1 Coding
+        p I first experienced prgramming during 10th grade, when I took Intro to Programming Class at school. After finishing taking AP Computer Science the following year, I also learned other language other than java from the other programmer outside school. Such programming skills enabled me to explore many things that I did not know about computer before and also to create this website as well. I also managed to license a usuable application as well.
+    section.menuSection.religion
+      img(src="https://gab505.github.io/pictures/soccer/IMG_2676.JPG")
+      .text
+        h1 Catholic
+        p Catholic background is one of the major aspects when describing myself. Being born in a family that had been Catholic for almost a century, I was baptized when I was three months old. As seen in the picture, I've been doing altar service at church since I was eight-years old.
+    section.menuSection.travel
+      img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
+      .text
+        h1 Travel
+        p Our family definitely like to travel. I've been to Western European countries such as Netherlands, Belgium, Switzerland, France, Germany, Austria and Germany, Vietnam, Philippines, Guatemala and Dominican Republic.
+        p Each trip was a valuable experience to learn different and unfamiliar culture outside my daily boundary. This is why I look forward to studying outside the States even I go to college.
+    section.menuSection.teaching
+      img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
+      .text
+        h1 Teaching
+        p This is my fourth year of teaching elementary students how to speak and write in Korean at Our Lady of Peace(Catholic Church I go to). First two years, I worked as a Teaching Assistant to help teachers prepare for their classes, and after that I had my own class to teach.
+        p Teaching kids who often becomes disrupt and disinterested is challenging, but it is still one of the most valuable experiences in my life that taught me patience and empathy to get along with people who are quite different from me.
+    section.menuSection.volunteer
+      img(src="https://gab505.github.io/pictures/guatemala/1467002587614.jpg")
+      .text
+        h1 Volunteer Work
+        p During three summer vacations during Freshman, Sophomore, and Junior year, I went to Guatemala twice and Dominican Republic once as a volunteering trip. Because I felt like I'm still in my comfort zone whenever I volunteered within the States, I wanted to experience volunteering in a true sense at places that are new and unfamiliar to me.
+    section.menuSection.subSection.volunteer
+      img(src="https://gab505.github.io/pictures/guatemala/1467002587614.jpg")
+      .text
+        p Each time I went there, I had different volunteering projects to do. We gifted family who are in need cookstoves that we built ourselves, chicken coops and chicken to help their living, and latrines to alleviate the pollution of the river.
+        p Through the valuable relationship I built with people I met in Guatemala and Dominican Republic, I relearned that helping others is about not only supporting them with material items, but also interacting with them with genuine empathy and care.
+    section.menuSection.sports
+      img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
+      .text
+        h1 Soccer
+        p I am also one of huge sports fan. Although I like watching almost all sports such as basketball and baseball, my favorite has always been soccer. During free time, I like to go to a park near my house and play soccer with people whom I don't even know.
+        p I played soccer at school for two years, and will definitely play soccer at college, too.
+        h1 Kendo
+        p I've been a Kendo Practitioner since 8th grade. For me and other Kendo practitioners, Kendo is not merely a sport, but also a challenging, inspiring training that influences our personality and ability to concentrate to the every moment of our lives.
+        p During the five valuable years of playing Kendo, I promoted 5 times total and earned '1st Dan'. I also participated in various competitions held by different Kendo Federations and enjoyed the opportunity of competing with people who are better Kendo Practitioners than I am and learn my strength and weakness.
+        
+      
+      
+      
