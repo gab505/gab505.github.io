@@ -1,24 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans')
+
+:root
+  --barColor: #e6d271
+
+body
+  font-family: 'Noto Sans', sans-serif !important
+
 nav
   margin-bottom 0 !important
 
+section.top
+  padding 100px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  h1 
+    font-family: 'Noto Sans', sans-serif
+    font-size 60px
+    color #444444
+  .hr
+    width 60px
+    height 4px
+    margin 10px 0 20px 0
+    background-color var(--barColor)
+  p
+    font-size 12px
+    color #777777
+    
+section.bottom
+  padding 100px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items flex-start
+  background-color #eee
+  h1 
+    font-family: 'Noto Sans', sans-serif
+    font-size 30px
+    color #707070
+  .hr
+    width 60px
+    height 4px
+    margin 10px 0 20px 0
+    background-color var(--barColor)
+  p
+    font-size 12px
+    color #898989
+
+section.menuSection:nth-child(2n-1)
+  background-color #eee
+
 section.menuSection
   min-height 50vh
-  padding 30px
-  border-top 1px solid #eee
-  //background-size cover
-  //background-position center
+  padding 30px 50px
   position relative
   overflow-x hidden
   display flex
-  flex-direction row
-  justify-content center
-  align-items center
-  .text
-    display flex
+  @media(min-width: 768px)
+    flex-direction row
+    justify-content space-between
+    align-items center
+  @media(max-width: 768px)
     flex-direction column
     justify-content center
     align-items center
-    padding 30px
+  .text
+    @media(min-width: 768px)
+      flex-basis 50%
+      padding 10% 0
+    @media(max-width: 768px)
+      width 100%
+      margin 10% 0
+    display flex
+    flex-direction column
+    justify-content space-evenly
+    align-items center
     h1
       margin 10px
       &:before
@@ -27,27 +84,46 @@ section.menuSection
       &:after
         content '}'
         margin-left 5px
-  img
-    top 0
-    left 0
-    object-fit: cover
-    object-position top
-    transition all 2s
-    @media(min-width: 800px)
-      width: 40%;
-    @media(max-width: 799px)
-      width: 50%;
-  &:hover
+  .barImg
+    position relative
+    @media(min-width: 768px)
+      flex-basis 40%
+      margin 10% 0
+    @media(max-width: 768px)
+      width 100%
+      margin 10% 0
+    &:before
+      content ""
+      position absolute
+      background-color var(--barColor)
+    &.left:before
+      width 10px
+      height 80px
+      top 0
+      left -20px
+    &.top:before
+      width 80px
+      height 10px
+      top -20px
+      left 0px
+    &.right:before
+      width 10px
+      height 80px
+      bottom 0
+      right -20px
+    &.bottom:before
+      width 80px
+      height 10px
+      bottom -20px
+      left 0px
     img
-      transform rotate(-5deg)
+      top 0
+      left 0
+      object-fit: cover
+      object-position top
+      width 100%
+
   &.subSection
     border-top none
     padding-top 0
     margin-top -90px
-      
-      
-      
-      
-      
-      
-      
