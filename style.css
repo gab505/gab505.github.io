@@ -1,23 +1,99 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+:root {
+  --barColor: #e6d271;
+}
+body {
+  font-family: 'Noto Sans', sans-serif !important;
+}
 nav {
   margin-bottom: 0 !important;
 }
-section.menuSection {
-  min-height: 50vh;
-  padding: 30px;
-  border-top: 1px solid #eee;
-  position: relative;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-section.menuSection .text {
+section.top {
+  padding: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+}
+section.top h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 60px;
+  color: #444;
+}
+section.top .hr {
+  width: 60px;
+  height: 4px;
+  margin: 10px 0 20px 0;
+  background-color: var(--barColor);
+}
+section.top p {
+  font-size: 12px;
+  color: #777;
+}
+section.bottom {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #eee;
+}
+section.bottom h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 30px;
+  color: #707070;
+}
+section.bottom .hr {
+  width: 60px;
+  height: 4px;
+  margin: 10px 0 20px 0;
+  background-color: var(--barColor);
+}
+section.bottom p {
+  font-size: 12px;
+  color: #898989;
+}
+section.menuSection:nth-child(2n-1) {
+  background-color: #eee;
+}
+section.menuSection {
+  min-height: 50vh;
+  padding: 30px 50px;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+}
+@media (min-width: 768px) {
+  section.menuSection {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  section.menuSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+section.menuSection .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  section.menuSection .text {
+    flex-basis: 50%;
+    padding: 10% 0;
+  }
+}
+@media (max-width: 768px) {
+  section.menuSection .text {
+    width: 100%;
+    margin: 10% 0;
+  }
 }
 section.menuSection .text h1 {
   margin: 10px;
@@ -30,25 +106,56 @@ section.menuSection .text h1:after {
   content: '}';
   margin-left: 5px;
 }
-section.menuSection img {
+section.menuSection .barImg {
+  position: relative;
+}
+@media (min-width: 768px) {
+  section.menuSection .barImg {
+    flex-basis: 40%;
+    margin: 10% 0;
+  }
+}
+@media (max-width: 768px) {
+  section.menuSection .barImg {
+    width: 100%;
+    margin: 10% 0;
+  }
+}
+section.menuSection .barImg:before {
+  content: "";
+  position: absolute;
+  background-color: var(--barColor);
+}
+section.menuSection .barImg.left:before {
+  width: 10px;
+  height: 80px;
+  top: 0;
+  left: -20px;
+}
+section.menuSection .barImg.top:before {
+  width: 80px;
+  height: 10px;
+  top: -20px;
+  left: 0px;
+}
+section.menuSection .barImg.right:before {
+  width: 10px;
+  height: 80px;
+  bottom: 0;
+  right: -20px;
+}
+section.menuSection .barImg.bottom:before {
+  width: 80px;
+  height: 10px;
+  bottom: -20px;
+  left: 0px;
+}
+section.menuSection .barImg img {
   top: 0;
   left: 0;
   object-fit: cover;
   object-position: top;
-  transition: all 2s;
-}
-@media (min-width: 800px) {
-  section.menuSection img {
-    width: 40%;
-  }
-}
-@media (max-width: 799px) {
-  section.menuSection img {
-    width: 50%;
-  }
-}
-section.menuSection:hover img {
-  transform: rotate(-5deg);
+  width: 100%;
 }
 section.menuSection.subSection {
   border-top: none;
