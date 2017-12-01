@@ -1,0 +1,307 @@
+:root {
+  --col1: #343839;
+  --col2: #352e35;
+  --col3: #015f6b;
+  --col4: #c1576e;
+  --col5: #008b9e;
+  --col6: #e4867a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-image: url("https://gab505.github.io/pictures/kendo/20160227_202851.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw auto;
+  background-position: 0 0;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+.topNav {
+  background: var(--col3) !important;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  align-items: center;
+}
+.topNav .menu {
+  vertical-align: top;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.topNav .menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #87ceeb;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.topNav .menu.fixed.show {
+  opacity: 0.8;
+}
+.topNav .portrait {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-image: url("https://gab505.github.io/pictures/family/1471528092674.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+}
+.topNav .portrait.donggyu {
+  background-image: url("https://gab505.github.io/pictures/kendo/20150927_092938(1).jpg");
+  background-position: -340px -40px;
+  background-size: 700px;
+}
+.topNav a {
+  cursor: pointer;
+  margin: 0 20px;
+}
+.topNav h1 {
+  border-bottom: none !important;
+  width: 100%;
+}
+section {
+  color: #fff;
+  min-height: 30vh;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+}
+section p {
+  margin: 10px 0;
+}
+section p.fadeIn {
+  width: 80%;
+  font-weight: bold;
+  color: #808080;
+  opacity: 0;
+  transition: all 1s;
+}
+section h1 {
+  margin: 10px 0;
+  width: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fff;
+}
+section:hover .fadeIn {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  opacity: 1;
+}
+section#skills .skill {
+  border: 2px dashed #ffa500;
+  border-radius: 15px;
+  margin: 10px 0;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(90deg, transparent 30vw, #ffa500 70vw);
+}
+section.bgImage.transparent:after {
+  background-image: none !important;
+}
+section.bgImage:nth-of-type(2n) .imgFrame {
+  float: right;
+  margin: 10px 0px 20px 20px;
+  width: 30%;
+}
+section.bgImage:nth-of-type(2n+1) .imgFrame {
+  float: left;
+  margin: 10px 20px 20px 0px;
+  width: 30%;
+}
+section.bgImage:after {
+  content: "";
+  background-position: 0 0;
+  background-size: 100vw auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+section#soccer {
+  --sectionCol: #fff;
+  --shadowCol: #03229f;
+}
+section#soccer p {
+  width: 50%;
+}
+section#soccer:after {
+  background-image: url("https://gab505.github.io/pictures/soccer/IMG_2676.JPG");
+}
+section#volunteering:after {
+  background-image: url("https://gab505.github.io/pictures/guatemala/IMG_7296.JPG");
+}
+section#religion:after {
+  background-image: url("https://gab505.github.io/pictures/church/AKUX9aFam4nUWzxIZQTwuqBDbE8HJ0owyrobH5NGWlwJ9pa4Gkm9lNB8_5fljoJXHsRKBIt-gUEZ8A6uAlOp_PdjWDQkQ6-1NGx8tvMY3X9jNE4Tl9FkO7ckdR_J-oNfeA--.jpeg");
+}
+section#travel:after {
+  background-image: url("https://gab505.github.io/pictures/family/1471528092674.jpg");
+}
+section#kendo:after {
+  background-image: url("https://c1.staticflickr.com/1/122/305421726_6d63fba8d1_b.jpg");
+}
+section#teaching:after {
+  background-image: url("https://s3-media4.fl.yelpcdn.com/bphoto/LflS4MogHzjyXvB6ykWUaQ/348s.jpg");
+}
+section#programming:after {
+  background-image: url("http://media.istockphoto.com/photos/programming-works-picture-id494345930?k=6&m=494345930&s=612x612&w=0&h=YdRS0VgR5Kb3TQR1goEdZK0oD_BKaPnXfQq7tiucdhI=");
+}
+section#math:after {
+  background-image: url("http://www.dailywire.com/sites/default/files/styles/article_full/public/uploads/2017/08/math.jpg?itok=vlqwg76Q");
+}
+section#skills {
+  color: #fff;
+  background: var(--col1);
+}
+section#projectsHeader {
+  min-height: 0;
+  background: #808080;
+}
+section#projects {
+  background: var(--col1);
+  padding: 0px;
+  display: grid;
+  color: #fff;
+  grid-auto-rows: 300px;
+}
+@media (max-width: 800px) {
+  section#projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 801px) and (max-width: 1200px) {
+  section#projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  section#projects {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+section#projects .project {
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+section#projects .project .text {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  text-align: center;
+  background: #808080;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 0;
+  transition: bottom 0.5s;
+}
+section#projects .project:hover .text {
+  bottom: 0;
+}
+section#awards {
+  background: var(--col3);
+}
+section#awards .awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section#awards .awards .text {
+  margin: 30px 0 10px 0;
+  color: #fff;
+  font-family: 'PT Serif';
+  text-align: center;
+  font-weight: bolder;
+}
+section#awards .awards img {
+  border: 5px solid #808080;
+  border-radius: 10px;
+  width: 40%;
+  transition: transform 1s;
+}
+section#awards .awards img:hover {
+  border-radius: 0;
+  transform: scale(1.8);
+}
+.hex {
+  --w: 150px;
+  --h: 90px;
+  --w2: calc(var(--w) / 3);
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+  margin: var(--w2) 0;
+}
+.hex:before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  width: 0;
+  border-right: calc(var(--w) / 2) solid transparent;
+  border-left: calc(var(--w) / 2) solid transparent;
+  border-bottom: calc(var(--w2)) solid #ffa500;
+}
+.hex:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-right: calc(var(--w) / 2) solid transparent;
+  border-left: calc(var(--w) / 2) solid transparent;
+  border-top: calc(var(--w2)) solid #ffa500;
+}
+.sectionBreak {
+  height: 30px;
+  background: var(--col3);
+}
+img.imgFrame {
+  border-radius: 50%;
+}
+img.flip {
+  transform: rotate(0.5turn);
+}
+@-moz-keyframes skillAnimation {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes skillAnimation {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes skillAnimation {
+  from {
+    width: 0%;
+  }
+}
+@keyframes skillAnimation {
+  from {
+    width: 0%;
+  }
+}
