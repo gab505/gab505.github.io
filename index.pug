@@ -4,7 +4,7 @@ html
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
     link(rel='stylesheet',href='https://bootswatch.com/3/simplex/bootstrap.css')
-    link(rel='stylesheet',href='style.css?v=20171111c') 
+    link(rel='stylesheet',href='style.css') 
   body
     nav.navbar.navbar-default
       .container-fluid
@@ -14,7 +14,8 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href='#') Donggyu Seo
+          a.navbar-brand(href='#') 서동규
+        a(href="https://run.plnkr.co/A0tCQl2cU6FblCtC/") Achievements and Awards
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav
             li.active
@@ -25,18 +26,18 @@ html
               a(href='#') Link
             li.dropdown
               a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-                | Programming Projects 
+                | Dropdown 
                 span.caret
               ul.dropdown-menu(role='menu')
                 li
-                  a(href='#') 1
+                  a(href='#') Action
                 li
-                  a(href='#') 2
+                  a(href='#') Another action
                 li
-                  a(href='#') 3
+                  a(href='#') Something else here
                 li.divider
                 li
-                  a(href='#') 4
+                  a(href='#') Separated link
                 li.divider
                 li
                   a(href='#') One more separated link
@@ -47,54 +48,63 @@ html
           ul.nav.navbar-nav.navbar-right
             li
               a(href='#') Link
+    section.top
+      h1 Portfolio
+      .hr
+      p Donggyu(Kevin) Seo 서동규
     section.menuSection.coding
-      img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
+      .barImg.left
+        img(src="https://static.pexels.com/photos/257894/pexels-photo-257894.jpeg")
       .text
         h1 Coding
         p I first experienced prgramming during 10th grade, when I took Intro to Programming Class at school. After finishing taking AP Computer Science the following year, I also learned other language other than java from the other programmer outside school. Such programming skills enabled me to explore many things that I did not know about computer before and also to create this website as well. I also managed to license a usuable application as well.
     section.menuSection.religion
-      img(src="https://gab505.github.io/pictures/church/AKUX9aFam4nUWzxIZQTwuqBDbE8HJ0owyrobH5NGWlwJ9pa4Gkm9lNB8_5fljoJXHsRKBIt-gUEZ8A6uAlOp_PdjWDQkQ6-1NGx8tvMY3X9jNE4Tl9FkO7ckdR_J-oNfeA--.jpeg")
+      .barImg.top
+        img(src="https://gab505.github.io/pictures/church/AKUX9aFam4nUWzxIZQTwuqBDbE8HJ0owyrobH5NGWlwJ9pa4Gkm9lNB8_5fljoJXHsRKBIt-gUEZ8A6uAlOp_PdjWDQkQ6-1NGx8tvMY3X9jNE4Tl9FkO7ckdR_J-oNfeA--.jpeg")
       .text
-        h1 Catholic
+        h1 Religious Affiliation
         p Catholic background is one of the major aspects when describing myself. Being born in a family that had been Catholic for almost a century, I was baptized when I was three months old. As seen in the picture, I've been doing altar service at church since I was eight-years old.
     section.menuSection.travel
-      img(src="https://gab505.github.io/pictures/family/1471528092674.jpg")
+      .barImg.right
+        img(src="https://gab505.github.io/pictures/family/1471528092674.jpg")
       .text
         h1 Travel
         p Our family definitely like to travel. I've been to Western European countries such as Netherlands, Belgium, Switzerland, France, Germany, Austria and Germany, Vietnam, Philippines, Guatemala and Dominican Republic.
         p Each trip was a valuable experience to learn different and unfamiliar culture outside my daily boundary. This is why I look forward to studying outside the States even I go to college.
     section.menuSection.teaching
-      img(src="https://gab505.github.io/pictures/download.jpeg")
+      .barImg.bottom
+        img(src="https://s3-media4.fl.yelpcdn.com/bphoto/LflS4MogHzjyXvB6ykWUaQ/348s.jpg")
       .text
         h1 Teaching
         p This is my fourth year of teaching elementary students how to speak and write in Korean at Our Lady of Peace(Catholic Church I go to). First two years, I worked as a Teaching Assistant to help teachers prepare for their classes, and after that I had my own class to teach.
         p Teaching kids who often becomes disrupt and disinterested is challenging, but it is still one of the most valuable experiences in my life that taught me patience and empathy to get along with people who are quite different from me.
     section.menuSection.volunteer
-      img(src="https://gab505.github.io/pictures/guatemala/1467002587614.jpg")
+      .barImg.left
+        img(src="https://gab505.github.io/pictures/guatemala/1467002587614.jpg")
       .text
         h1 Volunteer Work
         p During three summer vacations during Freshman, Sophomore, and Junior year, I went to Guatemala twice and Dominican Republic once as a volunteering trip. Because I felt like I'm still in my comfort zone whenever I volunteered within the States, I wanted to experience volunteering in a true sense at places that are new and unfamiliar to me.
-    section.menuSection.subSection.volunteer
-      img(src="https://gab505.github.io/pictures/guatemala/1467002563398.jpg")
-      .text
-        p Each time I went there, I had different volunteering projects to do. We gifted family who are in need cookstoves that we built ourselves, chicken coops and chicken to help their living, and latrines to alleviate the pollution of the river.
-        p Through the valuable relationship I built with people I met in Guatemala and Dominican Republic, I relearned that helping others is about not only supporting them with material items, but also interacting with them with genuine empathy and care.
-    section.menuSection.sports
-      img(src="https://gab505.github.io/pictures/soccer/IMG_2676.JPG")
+    section.menuSection.soccer
+      .barImg.top
+        img(src="https://gab505.github.io/pictures/soccer/IMG_2676.JPG")
       .text
         h1 Soccer
         p I am also one of huge sports fan. Although I like watching almost all sports such as basketball and baseball, my favorite has always been soccer. During free time, I like to go to a park near my house and play soccer with people whom I don't even know.
         p I played soccer at school for two years, and will definitely play soccer at college, too.
+        br
+        br
+    Section.menuSection.kendo
+      .barImg.top
+        img(src="https://gab505.github.io/pictures/kendo/20160227_202851.jpg")
+      .text
         h1 Kendo
         p I've been a Kendo Practitioner since 8th grade. For me and other Kendo practitioners, Kendo is not merely a sport, but also a challenging, inspiring training that influences our personality and ability to concentrate to the every moment of our lives.
         p During the five valuable years of playing Kendo, I promoted 5 times total and earned '1st Dan'. I also participated in various competitions held by different Kendo Federations and enjoyed the opportunity of competing with people who are better Kendo Practitioners than I am and learn my strength and weakness.
-    section.menuSection.math
-      img(src="https://gab505.github.io/pictures/9781921972317_1024x1024.png")
-      .text
-        h1 Math
-        p Among many different subjects I have taken at school, math is my favorite. I like not only solving challenging problems, but also math's objectivity. Without any bias, when one follows the right step, math always yields the right answer.
-        p Currently in my senior, I am the only student who is taking IB Further Mathematics HL. I consider it as a perfect preparation to experience how college-level math is like.
-        
+    section.bottom
+      h1 Portfolio
+      .hr
+      p This is DG's portfolio
+      p gab505.github.io
       
       
       
